@@ -1,13 +1,7 @@
-import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import "vanilla-cookieconsent/dist/cookieconsent.css";
-import * as CookieConsent from "vanilla-cookieconsent";
-import Counter from "./Counter";
-import Loader from "./Loader";
-import ContextProvider from "./context";
-import ContextSecProvider from "./contextSec";
 
 function App() {
   // useEffect(() => {
@@ -81,12 +75,6 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <ContextProvider>
-          <ContextSecProvider>
-            <Counter />
-            <Loader />
-          </ContextSecProvider>
-        </ContextProvider>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
